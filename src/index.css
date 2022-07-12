@@ -45,8 +45,8 @@ Variables
   --fixed-width: 620px;
   --clr-bcg: #f9f7f7;
   --clr-font: #112d4e;
-  --clr-list: #3f72af;
-  --clr-link: #dbe2ef;
+  --clr-list: #8cc0de;
+  --clr-link: #B5DEFF;
 }
 
 .dark-mode {
@@ -60,8 +60,8 @@ Variables
   --clr-bcg: #f9f7f7;
   --clr-font: #112d4e;
   --clr-primary: #d23669;
-  --clr-list: #3f72af;
-  --clr-link: #dbe2ef;
+  --clr-list: #8cc0de;
+  --clr-link: #B5DEFF;
 }
 
 /*

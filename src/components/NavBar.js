@@ -50,7 +50,6 @@ const NavBar = () => {
               className="sideBtn"
               onClick={() => {
                 setShowLinks(!showLinks);
-
                 toggleButton();
               }}
             >
@@ -62,7 +61,9 @@ const NavBar = () => {
               <Link to="/">Hi, I'm Dennis Chen </Link>
               <button className="mode-button" onClick={toggleTheme}>
                 {mode}
-                <span>{mode ? <BsMoonFill /> : <BsSunFill />}</span>
+                <span>
+                  {theme === "light-mode" ? <BsSunFill /> : <BsMoonFill />}
+                </span>
               </button>
             </h3>
           </div>

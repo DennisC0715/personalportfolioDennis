@@ -1,0 +1,138 @@
+nav {
+  background: var(--clr-bcg);
+  box-shadow: var(--light-shadow);
+}
+
+.nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-sidebar {
+  width: auto;
+  height: 3rem;
+  align-items: center;
+}
+
+.nav-title {
+  width: 90%;
+  text-align: center;
+}
+
+.nav-title h3 a {
+  color: var(--clr-font);
+}
+.nav-title h3 a:hover {
+  cursor: pointer;
+}
+
+.mode-button {
+  font-size: 1rem;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: var(--clr-font);
+}
+
+.mode-button span {
+  margin-left: 10px;
+  font-size: 1.3rem;
+}
+
+.nav-links {
+  list-style: none;
+  width: 100%;
+}
+
+.nav-links li {
+  margin: 3px 0;
+  position: relative;
+  background-color: var(--clr-list);
+  overflow: hidden;
+}
+
+.nav-links li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 0px;
+  background-color: var(--clr-link);
+  transition: 0.2s all ease-in-out;
+}
+
+.nav-links li:hover::before {
+  border-radius: 0 50px 50px 0;
+  width: 110%;
+}
+
+.nav-links li a {
+  display: block;
+  color: var(--clr-font);
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 0.3rem 0.3rem;
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  font-weight: 500;
+  position: relative;
+  z-index: 1;
+}
+
+.link-container {
+  height: 0;
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+.sideBtn {
+  font-size: 2rem;
+  color: var(--clr-font);
+  background-color: transparent;
+  border: 0;
+  margin: 7px 10px;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+@media screen and (min-width: 830px) {
+  .nav-container {
+    height: 3rem;
+    background-color: var(--clr-bcg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav-header {
+    width: 60%;
+    text-align: left;
+  }
+  .nav-title {
+    width: 50%;
+    text-align: left;
+    position: absolute;
+    left: 10px;
+  }
+
+  .nav-sidebar {
+    display: none;
+  }
+  .nav-links {
+    display: flex;
+  }
+
+  .link-container {
+    height: auto !important;
+  }
+  .nav-links a {
+    background-color: transparent;
+  }
+  .nav-links li {
+    background-color: transparent;
+  }
+  .nav-links li:hover::before {
+    border-radius: 0;
+  }
+}
